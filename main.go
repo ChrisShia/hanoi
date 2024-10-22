@@ -21,19 +21,6 @@ func main() {
 	movePartition(0, 0, counter, stack1[0])
 }
 
-func movePartition2(src []int) {
-	if len(src) > 1 {
-		par := make([]int, 0)
-		par = src[1:]
-		movePartition2(par)
-	} else if len(src) == 1 {
-		if src[0]%2 > 0 {
-
-		}
-	}
-	movePartition2(src[:1])
-}
-
 func movePartition(srcIndex, from int, counter *maths.ModuloCounter, root int) {
 	var lastAppendedTo = srcIndex
 	if from < len(*stacks_[srcIndex])-1 {
