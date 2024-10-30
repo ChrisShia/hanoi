@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	move(4, "A", "B", "C")
+	move(10, "A", "B", "C")
 }
 
 func move(n int, src, dest, buffer string) {
